@@ -26,12 +26,32 @@ Nghiên cứu này đặt ra câu hỏi: có thể xây dựng một công cụ 
 
 ```mermaid
 flowchart LR
-    D[Dữ liệu .xlsx] --> A[Thư viện utralytics]
-    A --> B[Nhãn dự đoán<br/>quá trình bị ẩn]
-    D --> C[Website_MayHocCoBan]
-    C --> E[Nhãn dự đoán]
-    C --> F[Công thức và các bước tính]
-    C --> G[Bảng số liệu và biểu đồ]
+    %% Định nghĩa kiểu dáng màu sắc
+    classDef data fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold;
+    classDef lib fill:#FFFDE7,stroke:#FBC02D,stroke-width:2px,color:#F57F17,font-weight:bold;
+    classDef web fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold;
+    classDef output1 fill:#FFEBEE,stroke:#C62828,stroke-width:2px,color:#B71C1C;
+    classDef output2 fill:#F3E5F5,stroke:#7B1FA2,stroke-width:2px,color:#4A148C;
+
+    %% Khai báo các nút
+    D["Dữ liệu .xlsx"]:::data
+    
+    A["Thư viện Ultralytics"]:::lib
+    B["Nhãn dự đoán<br/>(Quá trình bị ẩn)"]:::output1
+    
+    C["Website_MayHocCoBan"]:::web
+    E["Nhãn dự đoán"]:::output2
+    F["Công thức và các bước tính"]:::output2
+    G["Bảng số liệu và biểu đồ"]:::output2
+
+    %% Luồng dữ liệu
+    D --> A
+    A --> B
+    
+    D --> C
+    C --> E
+    C --> F
+    C --> G
 ```
 <div align="center">
 <p align="center">
