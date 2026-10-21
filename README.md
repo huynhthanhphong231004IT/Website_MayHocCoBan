@@ -191,11 +191,11 @@ flowchart TD
     A{"Thuật toán<br/><b>(Có giám sát)</b>"}:::supervised
     U{"Thuật toán<br/><b>(Không giám sát)</b>"}:::unsupervised
 
-    %% Các nhánh có giám sát
-    A -->|KNN| A1["Hiện ô K và loại khoảng cách"]
-    A -->|Hồi quy tuyến tính| A2["Khóa nhãn: liên tục"]
-    A -->|Hồi quy logistic| A3["Khóa nhãn: rời rạc"]
-    A -->|Naive Bayes, cây quyết định| A4["Cho chọn nhãn rời rạc hoặc liên tục"]
+    %% Các nhánh có giám sát (Chủ động ngắt dòng để không bị xén chữ)
+    A -->|KNN| A1["Hiện ô K và<br/>loại khoảng cách"]
+    A -->|Hồi quy tuyến tính| A2["Khóa nhãn:<br/>liên tục"]
+    A -->|Hồi quy logistic| A3["Khóa nhãn:<br/>rời rạc"]
+    A -->|Naive Bayes, cây quyết định| A4["Cho chọn nhãn<br/>rời rạc hoặc liên tục"]
 
     %% Các nhánh không giám sát
     U -->|K-means| U1["Hiện ô số cụm K"]
@@ -205,7 +205,7 @@ flowchart TD
     S -->|Có giám sát| A
     S -->|Không giám sát| U
 
-    %% Gán class màu sắc chi tiết cho các nút kết quả
+    %% Gán class màu sắc chi tiết
     class A1,A2,A3,A4 supervised;
     class U1,U2 unsupervised;
 ```
