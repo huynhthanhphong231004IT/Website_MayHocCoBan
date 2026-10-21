@@ -180,15 +180,34 @@ sequenceDiagram
 
 ```mermaid
 flowchart TD
-    S{Loại tập dữ liệu}
-    S -->|Có giám sát| A{Thuật toán}
-    S -->|Không giám sát| U{Thuật toán}
-    A -->|KNN| A1[Hiện ô K và loại khoảng cách]
-    A -->|Hồi quy tuyến tính| A2[Khóa nhãn: liên tục]
-    A -->|Hồi quy logistic| A3[Khóa nhãn: rời rạc]
-    A -->|Naive Bayes, cây quyết định| A4[Cho chọn nhãn rời rạc hoặc liên tục]
-    U -->|K-means| U1[Hiện ô số cụm K]
-    U -->|Phân cụm phân cấp| U2[Hiện chiến lược: bottom-up hoặc top-down]
+    %% Định nghĩa phong cách chuẩn Paper (Academic style)
+    classDef decision fill:#F0F4F8,stroke:#102A43,stroke-width:1.5px,color:#102A43,font-weight:bold;
+    classDef supervised fill:#EBF8FF,stroke:#2B6CB0,stroke-width:1.5px,color:#1A365D;
+    classDef unsupervised fill:#F3E8FF,stroke:#6B46C1,stroke-width:1.5px,color:#322659;
+
+    %% Các nút phân nhánh chính
+    S{"Loại tập dữ liệu"}:::decision
+    
+    A{"Thuật toán<br/><b>(Có giám sát)</b>"}:::supervised
+    U{"Thuật toán<br/><b>(Không giám sát)</b>"}:::unsupervised
+
+    %% Các nhánh có giám sát
+    A -->|KNN| A1["Hiện ô K và loại khoảng cách"]
+    A -->|Hồi quy tuyến tính| A2["Khóa nhãn: liên tục"]
+    A -->|Hồi quy logistic| A3["Khóa nhãn: rời rạc"]
+    A -->|Naive Bayes, cây quyết định| A4["Cho chọn nhãn rời rạc hoặc liên tục"]
+
+    %% Các nhánh không giám sát
+    U -->|K-means| U1["Hiện ô số cụm K"]
+    U -->|Phân cụm phân cấp| U2["Hiện chiến lược:<br/>bottom-up hoặc top-down"]
+
+    %% Kết nối từ gốc
+    S -->|Có giám sát| A
+    S -->|Không giám sát| U
+
+    %% Gán class màu sắc chi tiết cho các nút kết quả
+    class A1,A2,A3,A4 supervised;
+    class U1,U2 unsupervised;
 ```
 <div align="center">
 <p align="center">
