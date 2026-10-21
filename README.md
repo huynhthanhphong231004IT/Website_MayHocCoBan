@@ -26,20 +26,18 @@ Nghiên cứu này đặt ra câu hỏi: có thể xây dựng một công cụ 
 
 ```mermaid
 flowchart LR
-    %% Thiết lập hướng ngang và khoảng cách tối ưu để tiết kiệm diện tích dọc
-    %% Dùng cú pháp định dạng trực tiếp không qua classDef padding để tránh bóp méo chữ
-    
+    %% Khai báo các nút - dùng <br/> để chữ không bị cắt ngang
     D["Dữ liệu .xlsx"]:::data
     
-    A["Thư viện Ultralytics"]:::lib
+    A["Thư viện<br/>Ultralytics"]:::lib
     B["Nhãn dự đoán<br/>(Quá trình bị ẩn)"]:::output1
     
-    C["Website_MayHocCoBan"]:::web
+    C["Website<br/>MayHocCoBan"]:::web
     E["Nhãn dự đoán"]:::output2
-    F["Công thức và các bước tính"]:::output2
-    G["Bảng số liệu và biểu đồ"]:::output2
+    F["Công thức và<br/>các bước tính"]:::output2
+    G["Bảng số liệu<br/>và biểu đồ"]:::output2
 
-    %% Luồng kết nối
+    %% Mối liên kết
     D --> A
     A --> B
     
@@ -48,12 +46,12 @@ flowchart LR
     C --> F
     C --> G
 
-    %% Định nghĩa màu sắc và ép chiều rộng tối thiểu cho các node dài
-    classDef data fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold;
-    classDef lib fill:#FFFDE7,stroke:#FBC02D,stroke-width:2px,color:#F57F17,font-weight:bold;
-    classDef web fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold;
-    classDef output1 fill:#FFEBEE,stroke:#C62828,stroke-width:2px,color:#B71C1C;
-    classDef output2 fill:#F3E5F5,stroke:#7B1FA2,stroke-width:2px,color:#4A148C;
+    %% Định dạng style và khoảng đệm (padding) để chữ luôn hiển thị trọn vẹn
+    classDef data fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold,rx:5px,ry:5px;
+    classDef lib fill:#FFFDE7,stroke:#FBC02D,stroke-width:2px,color:#F57F17,font-weight:bold,rx:5px,ry:5px;
+    classDef web fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold,rx:5px,ry:5px;
+    classDef output1 fill:#FFEBEE,stroke:#C62828,stroke-width:2px,color:#B71C1C,rx:5px,ry:5px;
+    classDef output2 fill:#F3E5F5,stroke:#7B1FA2,stroke-width:2px,color:#4A148C,rx:5px,ry:5px;
 ```
 
 <div align="center">
