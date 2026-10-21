@@ -246,13 +246,37 @@ Từng số hạng được thay giá trị cụ thể rồi cộng dồn thành
 
 ```mermaid
 flowchart LR
-    C[Nhấn vào một dòng dữ liệu] --> T{Loại khoảng cách}
-    T -->|Euclid| E[Bình phương hiệu từng thuộc tính]
-    T -->|Manhattan| M[Giá trị tuyệt đối hiệu từng thuộc tính]
-    E --> S[Cộng dồn các số hạng]
+    %% Định nghĩa phong cách chuẩn Paper (Academic style)
+    classDef action fill:#F0F4F8,stroke:#102A43,stroke-width:1.5px,color:#102A43,font-weight:bold;
+    classDef decision fill:#FFFBEA,stroke:#B7791F,stroke-width:1.5px,color:#744210,font-weight:bold;
+    classDef process fill:#EBF8FF,stroke:#2B6CB0,stroke-width:1.5px,color:#1A365D;
+    classDef output fill:#F3E8FF,stroke:#6B46C1,stroke-width:1.5px,color:#322659;
+
+    %% Các nút trong sơ đồ
+    C["Nhấn vào một dòng dữ liệu"]:::action
+    
+    T{"Loại khoảng cách"}:::decision
+    
+    E["Bình phương hiệu<br/>từng thuộc tính"]:::process
+    M["Giá trị tuyệt đối hiệu<br/>từng thuộc tính"]:::process
+    
+    S["Cộng dồn<br/>các số hạng"]:::process
+    
+    Q["Lấy căn bậc hai<br/>(Dành cho Euclid)"]:::process
+    
+    R["MathJax dựng công thức<br/>trong cửa sổ chi tiết"]:::output
+
+    %% Luồng liên kết dữ liệu
+    C --> T
+    
+    T -->|Euclid| E
+    T -->|Manhattan| M
+    
+    E --> S
     M --> S
-    S --> Q[Lấy căn bậc hai nếu là Euclid]
-    Q --> R[MathJax dựng công thức trong cửa sổ chi tiết]
+    
+    S --> Q
+    Q --> R
     S --> R
 ```
 <div align="center">
