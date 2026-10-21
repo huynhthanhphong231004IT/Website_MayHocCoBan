@@ -26,7 +26,7 @@ Nghiên cứu này đặt ra câu hỏi: có thể xây dựng một công cụ 
 
 ```mermaid
 flowchart LR
-    D[Dữ liệu .xlsx] --> A[Thư viện / bộ công cụ]
+    D[Dữ liệu .xlsx] --> A[Thư viện utralytics]
     A --> B[Nhãn dự đoán<br/>quá trình bị ẩn]
     D --> C[Website_MayHocCoBan]
     C --> E[Nhãn dự đoán]
