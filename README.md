@@ -4,9 +4,9 @@
 
 ### Hệ thống web trực quan hóa quá trình học và dự đoán của các thuật toán máy học cơ bản
 
-**Huỳnh Thanh Phong** · [@huynhthanhphong231004IT](https://github.com/huynhthanhphong231004IT)
+**Huỳnh Thanh Phong**  -  [@huynhthanhphong231004IT](https://github.com/huynhthanhphong231004IT)
 
-[huynhthanhphong231004it.github.io/Website_MayHocCoBan](https://huynhthanhphong231004it.github.io/Website_MayHocCoBan/)
+**Link website** - [huynhthanhphong231004it.github.io/Website_MayHocCoBan](https://huynhthanhphong231004it.github.io/Website_MayHocCoBan/)
 
 </div>
 
@@ -33,8 +33,11 @@ flowchart LR
     C --> F[Công thức và các bước tính]
     C --> G[Bảng số liệu và biểu đồ]
 ```
-
-*Hình 1. Khoảng trống mà hệ thống hướng tới: giữ lại quá trình tính toán bên cạnh kết quả.*
+<div align="center">
+<p align="center">
+  <i>Hình I. Khoảng trống mà hệ thống hướng tới: giữ lại quá trình tính toán bên cạnh kết quả.</i>
+</p>
+</div>
 
 ---
 
@@ -78,7 +81,11 @@ flowchart TB
     F3 --> V2
 ```
 
-*Hình 2. Kiến trúc bốn lớp của hệ thống.*
+<div align="center">
+<p align="center">
+  <i>Hình II. Kiến trúc bốn lớp của hệ thống</i>
+</p>
+</div>
 
 ### 2.3. Luồng xử lý
 
@@ -102,20 +109,28 @@ sequenceDiagram
     U->>R: Xem chi tiết từng phép tính
 ```
 
-*Hình 3. Luồng xử lý của một lượt chạy.*
+<div align="center">
+<p align="center">
+  <i>Hình III. Luồng xử lý của một lượt chạy</i>
+</p>
+</div>
+
 
 ### 2.4. Quy ước dữ liệu
 
 Để mọi thuật toán nhận cùng một dạng đầu vào, chúng tôi thống nhất cấu trúc tệp Excel như Bảng 1. Dòng đầu luôn là tên thuộc tính; riêng tập huấn luyện có cột cuối là nhãn.
-
+<div align="center">
+    
 | | Tập huấn luyện | Tập dự đoán |
 |---|---|---|
 | Vai trò | Xây dựng và tối ưu mô hình | Dự đoán, kiểm tra sau huấn luyện |
 | Dòng đầu | Tên thuộc tính và nhãn | Tên thuộc tính |
 | Cột nhãn | Có (cột cuối) | Không |
 | Tỷ lệ gợi ý | 70–80% | 20–30% |
-
-*Bảng 1. Quy ước định dạng dữ liệu có giám sát. Dữ liệu không giám sát không có cột nhãn.*
+<p align="center">
+  <i>Bảng 1. Quy ước định dạng dữ liệu có giám sát. Dữ liệu không giám sát không có cột nhãn.</i>
+</p>
+</div>
 
 ### 2.5. Ràng buộc cấu hình
 
@@ -133,13 +148,18 @@ flowchart TD
     U -->|K-means| U1[Hiện ô số cụm K]
     U -->|Phân cụm phân cấp| U2[Hiện chiến lược: bottom-up hoặc top-down]
 ```
-
-*Hình 4. Cơ chế tự điều chỉnh giao diện theo lựa chọn của người dùng.*
+<div align="center">
+<p align="center">
+  <i>Hình IV. Cơ chế tự điều chỉnh giao diện theo lựa chọn của người dùng.</i>
+</p>
+</div>
 
 ### 2.6. Các thuật toán và cách chúng được đưa vào hệ thống
 
 Chúng tôi chọn những thuật toán kinh điển, có công thức rõ ràng và cài đặt được trực tiếp bằng JavaScript: KNN [1], Naive Bayes [2], cây quyết định [3, 4], hồi quy tuyến tính [8, 9], hồi quy logistic [5], K-means [6] và phân cụm phân cấp [7]. Bảng 2 tóm tắt bài toán, tham số và nội dung được hiển thị cho từng thuật toán.
 
+<div align="center">
+    
 | Thuật toán | Bài toán | Tham số người dùng đặt |
 |---|---|---|
 | KNN | Phân loại, hồi quy | Số K, khoảng cách Euclid hoặc Manhattan |
@@ -149,8 +169,11 @@ Chúng tôi chọn những thuật toán kinh điển, có công thức rõ ràn
 | Hồi quy logistic | Phân loại | Không |
 | K-means | Phân cụm | Số cụm K |
 | Phân cụm phân cấp | Phân cụm | Chiến lược bottom-up hoặc top-down |
+<p align="center">
+  <i>Bảng 2. Các thuật toán trong hệ thống.</i>
+</p>
+</div>
 
-*Bảng 2. Các thuật toán trong hệ thống.*
 
 ### 2.7. Cách giải thích kết quả
 
@@ -171,8 +194,11 @@ flowchart LR
     Q --> R[MathJax dựng công thức trong cửa sổ chi tiết]
     S --> R
 ```
-
-*Hình 5. Quy trình diễn giải phép tính khoảng cách.*
+<div align="center">
+<p align="center">
+  <i>Hình V. Quy trình diễn giải phép tính khoảng cách.</i>
+</p>
+</div>
 
 ---
 
