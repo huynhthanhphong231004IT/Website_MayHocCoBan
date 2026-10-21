@@ -252,10 +252,10 @@ flowchart LR
     classDef process fill:#EBF8FF,stroke:#2B6CB0,stroke-width:1.5px,color:#1A365D;
     classDef output fill:#F3E8FF,stroke:#6B46C1,stroke-width:1.5px,color:#322659;
 
-    %% Các nút trong sơ đồ
-    C["Nhấn vào một dòng dữ liệu"]:::action
+    %% Các nút trong sơ đồ (đã ngắt dòng chủ động tránh xén chữ)
+    C["Nhấn vào một<br/>dòng dữ liệu"]:::action
     
-    T{"Loại khoảng cách"}:::decision
+    T{"Loại<br/>khoảng cách"}:::decision
     
     E["Bình phương hiệu<br/>từng thuộc tính"]:::process
     M["Giá trị tuyệt đối hiệu<br/>từng thuộc tính"]:::process
@@ -281,7 +281,7 @@ flowchart LR
 ```
 <div align="center">
 <p align="center">
-  <i>Hình V. Quy trình diễn giải phép tính khoảng cách.</i>
+  <i>Hình V. Quy trình diễn giải phép tính khoảng cách mô phỏng cho giải thuật KNN.</i>
 </p>
 </div>
 
