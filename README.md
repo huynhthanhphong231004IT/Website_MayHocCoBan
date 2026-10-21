@@ -1,14 +1,25 @@
 <div align="center">
-
-# Website_MayHocCoBan
-
-### Hệ thống web trực quan hóa quá trình học và dự đoán của các thuật toán máy học cơ bản
-
-**Huỳnh Thanh Phong**  -  [@huynhthanhphong231004IT](https://github.com/huynhthanhphong231004IT)
+    
+## Hệ thống web trực quan hóa quá trình học và dự đoán của các thuật toán máy học cơ bản
 
 **Link website** - [huynhthanhphong231004it.github.io/Website_MayHocCoBan](https://huynhthanhphong231004it.github.io/Website_MayHocCoBan/)
 
 </div>
+
+---
+
+<p>
+    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+**Facbook**: https://www.facebook.com/huynh.thanh.phong.561667 <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+**Tiktok**: https://www.tiktok.com/@reorioll <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+**Youtobe**: https://www.youtube.com/@ReoRioll-2304CICTCTU <br>
+</p>
+<br>
 
 ---
 
