@@ -242,7 +242,7 @@ Chúng tôi chọn những thuật toán kinh điển, có công thức rõ ràn
 | Cây quyết định | Phân loại, hồi quy | Không |
 | Hồi quy tuyến tính | Hồi quy | Không |
 | Hồi quy logistic | Phân loại | Không |
-| K-means | Phân cụm | Số cụm K |
+| K-means | Phân cụm | Số cụm K từ Elbow chart |
 | Phân cụm phân cấp | Phân cụm | Chiến lược bottom-up hoặc top-down |
 <p align="center">
   <i>Bảng 2. Các thuật toán trong hệ thống.</i>
