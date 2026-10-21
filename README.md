@@ -298,18 +298,8 @@ flowchart LR
 
 ---
 
-## 3. Đóng góp
+## 3. Kết luận
 
-Đóng góp chính của nghiên cứu là một công cụ thực hành đặt bảy thuật toán của hai nhóm bài toán vào cùng một giao diện. Nhờ đó, người học đổi thuật toán hay tham số mà không phải đổi công cụ, và có thể quan sát cách các phương pháp xử lý cùng một tập dữ liệu.
+Đóng góp chính của nghiên cứu là một công cụ thực hành đặt bảy thuật toán của hai nhóm bài toán vào cùng một giao diện. Nhờ đó, người học đổi thuật toán hay tham số mà không phải đổi công cụ, và có thể quan sát cách các phương pháp xử lý cùng một tập dữ liệu. Đóng góp thứ hai là cách trình bày kết quả có thể truy ngược. Mỗi kết quả đi kèm công thức và các bước thay số, để người học đối chiếu với lý thuyết trong giáo trình thay vì tin vào một con số không rõ nguồn gốc. Đóng góp thứ ba là khả năng tiếp cận. Ứng dụng đọc trực tiếp tệp Excel, không cần cài đặt hay viết mã, và dữ liệu được xử lý ngay tại máy người dùng. Cùng với quy ước dữ liệu thống nhất và cơ chế tự khóa cấu hình sai, điều này giúp rút ngắn thời gian làm quen cho người mới.
 
-Đóng góp thứ hai là cách trình bày kết quả có thể truy ngược. Mỗi kết quả đi kèm công thức và các bước thay số, để người học đối chiếu với lý thuyết trong giáo trình thay vì tin vào một con số không rõ nguồn gốc.
-
-Đóng góp thứ ba là khả năng tiếp cận. Ứng dụng đọc trực tiếp tệp Excel, không cần cài đặt hay viết mã, và dữ liệu được xử lý ngay tại máy người dùng. Cùng với quy ước dữ liệu thống nhất và cơ chế tự khóa cấu hình sai, điều này giúp rút ngắn thời gian làm quen cho người mới.
-
----
-
-## 4. Kết luận
-
-Chúng tôi đã xây dựng Website_MayHocCoBan, một ứng dụng web giúp người học thực hành các thuật toán máy học cơ bản và nhìn thấy quá trình tính toán đằng sau kết quả. Hạn chế hiện tại là toàn bộ tính toán chạy trên trình duyệt nên tốc độ giảm khi dữ liệu lớn, hệ thống chưa có các thước đo đánh giá mô hình như ma trận nhầm lẫn hay kiểm định chéo, và cần kết nối Internet để tải thư viện.
-
-Hướng phát triển tiếp theo gồm bổ sung các thuật toán như máy vector hỗ trợ và rừng ngẫu nhiên, thêm các thước đo đánh giá, và chuyển phần tính toán nặng sang Web Worker để giao diện vẫn mượt với dữ liệu lớn hơn.
+Chúng tôi đã xây dựng Website_MayHocCoBan, một ứng dụng web giúp người học thực hành các thuật toán máy học cơ bản và nhìn thấy quá trình tính toán đằng sau kết quả. Hạn chế hiện tại là toàn bộ tính toán chạy trên trình duyệt nên tốc độ giảm khi dữ liệu lớn, hệ thống chưa có các thước đo đánh giá mô hình như ma trận nhầm lẫn hay kiểm định chéo, và cần kết nối Internet để tải thư viện. Hướng phát triển tiếp theo gồm bổ sung các thuật toán như máy vector hỗ trợ và rừng ngẫu nhiên, thêm các thước đo đánh giá, và chuyển phần tính toán nặng sang Web Worker để giao diện vẫn mượt với dữ liệu lớn hơn.
