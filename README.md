@@ -26,17 +26,9 @@ Nghiên cứu này đặt ra câu hỏi: có thể xây dựng một công cụ 
 
 ```mermaid
 flowchart LR
-    %% Cấu hình khoảng cách giữa các node và hàng
-    linkStyle default stroke-width:2px;
+    %% Thiết lập hướng ngang và khoảng cách tối ưu để tiết kiệm diện tích dọc
+    %% Dùng cú pháp định dạng trực tiếp không qua classDef padding để tránh bóp méo chữ
     
-    %% Định nghĩa kiểu dáng với padding rộng hơn
-    classDef data fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold,padding:12px;
-    classDef lib fill:#FFFDE7,stroke:#FBC02D,stroke-width:2px,color:#F57F17,font-weight:bold,padding:12px;
-    classDef web fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold,padding:12px;
-    classDef output1 fill:#FFEBEE,stroke:#C62828,stroke-width:2px,color:#B71C1C,padding:10px;
-    classDef output2 fill:#F3E5F5,stroke:#7B1FA2,stroke-width:2px,color:#4A148C,padding:10px;
-
-    %% Khai báo các nút (xuống dòng chủ động cho ô dài)
     D["Dữ liệu .xlsx"]:::data
     
     A["Thư viện Ultralytics"]:::lib
@@ -44,10 +36,10 @@ flowchart LR
     
     C["Website_MayHocCoBan"]:::web
     E["Nhãn dự đoán"]:::output2
-    F["Công thức và<br/>các bước tính"]:::output2
-    G["Bảng số liệu<br/>và biểu đồ"]:::output2
+    F["Công thức và các bước tính"]:::output2
+    G["Bảng số liệu và biểu đồ"]:::output2
 
-    %% Luồng dữ liệu
+    %% Luồng kết nối
     D --> A
     A --> B
     
@@ -55,6 +47,13 @@ flowchart LR
     C --> E
     C --> F
     C --> G
+
+    %% Định nghĩa màu sắc và ép chiều rộng tối thiểu cho các node dài
+    classDef data fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold;
+    classDef lib fill:#FFFDE7,stroke:#FBC02D,stroke-width:2px,color:#F57F17,font-weight:bold;
+    classDef web fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold;
+    classDef output1 fill:#FFEBEE,stroke:#C62828,stroke-width:2px,color:#B71C1C;
+    classDef output2 fill:#F3E5F5,stroke:#7B1FA2,stroke-width:2px,color:#4A148C;
 ```
 
 <div align="center">
