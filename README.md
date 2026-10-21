@@ -73,24 +73,39 @@ Chúng tôi chọn xây dựng ứng dụng web tĩnh, xử lý hoàn toàn phí
 Hệ thống chia làm bốn lớp, mỗi lớp phụ trách một việc, thể hiện ở Hình 2.
 
 ```mermaid
-flowchart TB
-    subgraph UI["Lớp giao diện: index.html, css.css"]
-        F1[Biểu mẫu chọn dữ liệu, thuật toán, tham số]
-        F2[Cửa sổ hướng dẫn]
-        F3[Vùng kết quả chi tiết]
+flowchart LR
+    %% Style chuẩn bài báo khoa học (Paper style)
+    classDef ui fill:#F0F4F8,stroke:#102A43,stroke-width:1.5px,color:#102A43;
+    classDef data fill:#FFFbea,stroke:#B7791F,stroke-width:1.5px,color:#744210;
+    classDef algo fill:#EBF8FF,stroke:#2B6CB0,stroke-width:1.5px,color:#1A365D;
+    classDef vis fill:#F3E8FF,stroke:#6B46C1,stroke-width:1.5px,color:#322659;
+
+    subgraph UI ["Lớp Giao Diện (Presentation Layer)"]
+        direction TB
+        F1["Biểu mẫu chọn dữ liệu,<br/>thuật toán & tham số"]
+        F2["Cửa sổ hướng dẫn"]
+        F3["Vùng hiển thị<br/>kết quả chi tiết"]
     end
-    subgraph DATA["Lớp dữ liệu"]
-        S[SheetJS: đọc .xlsx]
-        M[math.js: tính toán số học]
+
+    subgraph DATA ["Lớp Dữ Liệu (Data Layer)"]
+        direction TB
+        S["SheetJS<br/><i>(Đọc file .xlsx)</i>"]
+        M["math.js<br/><i>(Tính toán số học)</i>"]
     end
-    subgraph ALGO["Lớp thuật toán"]
-        T1[ThuatToan.js: có giám sát]
-        T2[ThuatToan2.js: không giám sát]
+
+    subgraph ALGO ["Lớp Thuật Toán (Business/Algo Layer)"]
+        direction TB
+        T1["ThuatToan.js<br/><b>(Học có giám sát)</b>"]
+        T2["ThuatToan2.js<br/><b>(Học không giám sát)</b>"]
     end
-    subgraph VIS["Lớp trực quan hóa"]
-        V1[Chart.js, D3.js: biểu đồ]
-        V2[MathJax: công thức]
+
+    subgraph VIS ["Lớp Trực Quan Hóa (Visualization Layer)"]
+        direction TB
+        V1["Chart.js / D3.js<br/><i>(Vẽ biểu đồ)</i>"]
+        V2["MathJax<br/><i>(Hiển thị công thức)</i>"]
     end
+
+    %% Luồng liên kết dữ liệu
     F1 --> S
     S --> T1
     S --> T2
@@ -100,6 +115,12 @@ flowchart TB
     T2 --> F3
     F3 --> V1
     F3 --> V2
+
+    %% Áp dụng kiểu dáng
+    class F1,F2,F3 ui;
+    class S,M data;
+    class T1,T2 algo;
+    class V1,V2 vis;
 ```
 
 <div align="center">
