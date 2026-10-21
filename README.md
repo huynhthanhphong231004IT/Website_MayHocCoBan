@@ -1,6 +1,9 @@
 <div align="center">
     
 ## Hệ thống web trực quan hóa quá trình học và dự đoán của các thuật toán máy học cơ bản
+<p align="center">
+   Computer Science of College of Information and Communication Technology of Can Tho University (Course 48)<br>
+</p>
 
 **Link website** - [huynhthanhphong231004it.github.io/Website_MayHocCoBan](https://huynhthanhphong231004it.github.io/Website_MayHocCoBan/)
 
@@ -9,7 +12,6 @@
 ---
 
 <p>
-    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 **Facbook**: https://www.facebook.com/huynh.thanh.phong.561667 <br>
 
