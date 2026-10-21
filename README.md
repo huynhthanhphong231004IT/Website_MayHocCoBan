@@ -41,7 +41,7 @@ flowchart LR
     D["Dữ liệu .xlsx"]:::data
     
     A["Thư viện<br/>Ultralytics"]:::lib
-    B["Nhãn dự đoán<br/>(Quá trình bị ẩn)"]:::output1
+    B["Nhãn dự đoán<br/>(Khó hiểu quá trình)"]:::output1
     
     C["Website<br/>MayHocCoBan"]:::web
     E["Nhãn dự đoán"]:::output2
