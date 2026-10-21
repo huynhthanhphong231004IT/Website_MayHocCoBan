@@ -58,7 +58,7 @@ flowchart LR
     C --> G
 
     %% Định dạng style và khoảng đệm (padding) để chữ luôn hiển thị trọn vẹn
-    classDef data fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold,rx:5px,ry:5px;
+    classDef data fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold,rx:15px,ry:5px;
     classDef lib fill:#FFFDE7,stroke:#FBC02D,stroke-width:2px,color:#F57F17,font-weight:bold,rx:5px,ry:5px;
     classDef web fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold,rx:5px,ry:5px;
     classDef output1 fill:#FFEBEE,stroke:#C62828,stroke-width:2px,color:#B71C1C,rx:5px,ry:5px;
